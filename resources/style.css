@@ -70,10 +70,11 @@ nav .back-to-top {
 }
 
 #hero h1 {
-    font-size: 4rem;
+    font-size: 5rem;
     color: #FFFFFF;
     letter-spacing: 2px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+
 }
 
 .countdown {
@@ -96,6 +97,7 @@ nav .back-to-top {
     font-weight: bold;
     color: #FFFFFF;
     display: block;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .label {
@@ -125,7 +127,7 @@ nav .back-to-top {
     color: #1A237E;
     margin-top: 1rem;
     margin-bottom: 3rem;
-    font-size: 2.5rem;
+    font-size: 3rem;
     text-align: center;
 }
 
@@ -151,4 +153,39 @@ nav .back-to-top {
     transform: scale(1.10);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     filter: grayscale(0%) brightness(100%);
+}
+
+#year-2025 h2 {
+    margin-bottom: 2rem;
+}
+
+.future-message {
+    text-align: center;
+    color: #1A237E;
+    padding: 1rem 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.future-message h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.future-message p {
+    font-size: 1.25rem;
+    opacity: 0.8;
+}
+
+footer {
+    text-align: center;
+    background-color: #1A237E;
+    padding: 2rem 0;
+    margin-top: 4rem;
+}
+
+footer p {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
 }
