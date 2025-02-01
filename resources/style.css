@@ -6,10 +6,13 @@
 
 html {
     scroll-behavior: smooth;
+
+    scroll-padding-top: 70px;
 }
 
 body {
     font-family: "Playfair Display", serif;
+    background-color: #FAF5FF;
 }
 
 nav {
@@ -17,13 +20,21 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 1rem 5%;
-    background-color: rgb(26, 35, 126);
+    background-color: #1A237E;
     position: fixed;
     height: 70px;
     width: 100%;
     z-index: 10;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
 
+}
+
+nav a {
+    text-decoration: none;
+    color: #ffffff;
+    font-family: "Montserrat", sans-serif;
+    transition: all 0.5s ease;
+    display: inline-block;
 }
 
 nav ul {
@@ -33,19 +44,12 @@ nav ul {
 
 }
 
-nav a,
-nav p {
-    text-decoration: none;
-    color: #ffffff;
-    transition: 0.5s;
-    font-family: "Montserrat", serif;
-}
-
 nav a:hover {
     color: #FFEB3B;
+    transform: scale(1.10);
 }
 
-nav p {
+nav .back-to-top {
     font-weight: bold;
     font-size: 1.2rem;
     letter-spacing: 0.15rem;
@@ -57,9 +61,8 @@ nav p {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/resources/images/collage.webp");
     width: 100%;
     background-position: center;
-    height: 450px;
+    height: 500px;
     background-size: cover;
-
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -106,4 +109,46 @@ nav p {
     color: #ffffff;
     font-size: 1.5rem;
     margin-top: 1rem;
+}
+
+#year-2022,
+#year-2023,
+#year-2024 {
+    padding: 2rem 5%;
+
+}
+
+#year-2022 h2,
+#year-2023 h2,
+#year-2024 h2 {
+    font-family: 'Montserrat', sans-serif;
+    color: #1A237E;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.img-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.img-container img {
+    width: 300px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    transition: all 0.5s ease;
+    filter: grayscale(100%) brightness(90%);
+
+}
+
+.img-container img:hover {
+    transform: scale(1.10);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    filter: grayscale(0%) brightness(100%);
 }

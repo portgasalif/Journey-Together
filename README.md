@@ -8,7 +8,6 @@ A simple responsive website showcasing our timeline memories.
 - Hero section with time counter
 - Timeline photo showcase
 - Basic animations
-- Mobile-friendly design
 
 ## Tech Stack 💻
 
