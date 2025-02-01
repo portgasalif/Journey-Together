@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5%;
+    background-color: rgba(26, 35, 126, 0.9);
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+nav a,
+nav p {
+    text-decoration: none;
+    color: #ffffff;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #FFEB3B;
+}
+
+nav p {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
