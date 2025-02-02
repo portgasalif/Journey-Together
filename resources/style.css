@@ -58,7 +58,7 @@ nav .back-to-top {
 
 #hero {
     padding-top: 70px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/resources/images/collage.webp");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../resources/images/collage.jpg");
     width: 100%;
     background-position: center;
     height: 500px;
