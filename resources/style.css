@@ -58,7 +58,7 @@ nav .back-to-top {
 
 #hero {
     padding-top: 70px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../resources/images/collage.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../resources/images/collage_new.jpg");
     width: 100%;
     background-position: center;
     height: 500px;
@@ -122,7 +122,8 @@ nav .back-to-top {
 
 #year-2022 h2,
 #year-2023 h2,
-#year-2024 h2 {
+#year-2024 h2,
+#year-2025 h2 {
     font-family: 'Montserrat', sans-serif;
     color: #1A237E;
     margin-top: 1rem;
@@ -147,33 +148,56 @@ nav .back-to-top {
     transition: all 0.5s ease;
     filter: grayscale(100%) brightness(90%);
 
+
 }
 
 .img-container img:hover {
     transform: scale(1.10);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     filter: grayscale(0%) brightness(100%);
-}
-
-#year-2025 h2 {
-    margin-bottom: 2rem;
+    cursor: zoom-in;
 }
 
 .future-message {
     text-align: center;
     color: #1A237E;
-    padding: 1rem 0;
+    padding: 2rem 0;
     font-family: 'Montserrat', sans-serif;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(26, 35, 126, 0.15);
+    max-width: 600px;
+    margin: 3rem auto 0 auto;
 }
 
 .future-message h3 {
     font-size: 1.8rem;
     margin-bottom: 1rem;
+    padding: 0 1rem;
 }
 
 .future-message p {
     font-size: 1.25rem;
     opacity: 0.8;
+    padding: 0 1rem;
+}
+
+.message-button {
+    background-color: #1A237E;
+    color: white;
+    transition: all 0.5s ease;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+    padding: 1rem 2rem;
+    margin-top: 1.5rem;
+    border-radius: 8px;
+    border: none;
+}
+
+.message-button:hover {
+    transform: scale(1.10);
+    box-shadow: 0 4px 16px rgba(26, 35, 126, 0.2);
 }
 
 footer {
@@ -188,4 +212,55 @@ footer p {
     color: white;
     font-size: 1.2rem;
     letter-spacing: 1px;
+}
+
+@media screen and (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        height: auto;
+
+    }
+
+    nav ul {
+        gap: 1rem;
+        margin-top: 1rem;
+    }
+
+    .countdown {
+        gap: 1rem;
+        flex-wrap: wrap;
+    }
+
+    .time-card {
+        min-width: 80px;
+    }
+
+    #hero h1 {
+        font-size: 3rem;
+    }
+
+    .img-container img:hover {
+        transform: scale(1.05);
+        cursor: zoom-in;
+    }
+
+    .future-message {
+        width: 90%;
+        padding: 2rem 1rem;
+    }
+
+    .future-message h3 {
+        font-size: 1.8rem;
+        margin-bottom: 1rem;
+    }
+
+    .future-message p {
+        font-size: 1.25rem;
+        opacity: 0.8;
+    }
+
+    .message-button {
+        padding: 0.8rem;
+        font-size: 0.8rem;
+    }
 }
